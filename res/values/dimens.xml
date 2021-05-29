@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_layout_zero_dp">0dp</dimen>
+    <dimen name="map_padding_vertical">1</dimen>
+    <dimen name="map_padding_horizontal">0</dimen>
+
+</resources>
+

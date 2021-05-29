@@ -1,0 +1,45 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowDisablePreview">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LogoView" parent="BaseLogoView" >
+        <item name="android:layout_gravity">bottom|left</item>
+        <item name="android:layout_margin">@dimen/common_layout_zero_dp</item>
+    </style>
+
+    <style name="CompassView" parent="BaseCompactView">
+        <item name="android:layout_gravity">top|start</item>
+        <item name="android:layout_marginStart">@dimen/compass_default_margin_start</item>
+        <item name="android:layout_marginTop">@dimen/compass_default_margin_top</item>
+    </style>
+
+    <style name="CenterOnCurrentLocationView" parent="BaseCenterOnCurrentLocationView">
+        <item name="android:layout_gravity">bottom|start</item>
+        <item name="android:layout_marginStart">@dimen/compass_default_margin_start</item>
+        <item name="android:layout_marginBottom">@dimen/current_location_default_margin_bottom</item>
+    </style>
+
+    <style name="ZoomButton" parent="GenericControlButton" />
+
+    <style name="ZoomButtonsGroup" parent="GenericControlButtonsGroup">
+        <item name="android:layout_width">@dimen/control_button_default_size</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Gets rid of the search icon -->
+        <item name="searchIcon">@drawable/fav</item>
+        <!-- Gets rid of the "underline" in the text -->
+        <item name="queryBackground">@color/white</item>
+        <!-- Gets rid of the search icon when the SearchView is expanded -->
+        <item name="searchHintIcon">@null</item>
+        <!-- The hint text that appears when the user has not typed anything -->
+        <item name="queryHint">@string/podpowiedz</item>
+    </style>
+
+</resources>
