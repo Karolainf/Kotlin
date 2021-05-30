@@ -1,20 +1,26 @@
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'kotlin-android-extensions'
+
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'kotlin-android-extensions'
-
 apply plugin: 'kotlin-kapt'
+
+
 
 android {
     compileSdkVersion 29
     buildToolsVersion "30.0.3"
     defaultConfig {
-        applicationId "com.example.myapp"
+        applicationId "com.example.mapkotlin"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        buildConfigField("String", "MAPS_API_KEY", "\"DuujoKxauvhngFp2gzuoECD1ra58U8jK\"")
+        buildConfigField("String", "SEARCH_API_KEY", "\"OLUjjte8UZ5GcK4q0HLoAtfH0pq5XHlX\"")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 
@@ -44,6 +50,8 @@ android {
 }
 
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -85,4 +93,14 @@ dependencies {
     implementation("com.tomtom.online:sdk-maps-driving-extensions:2.4807")
 
     implementation 'com.android.support:multidex:1.0.1'
+
+//    implementation 'com.google.android.gms:play-services:15.0.1'
+
+    implementation 'com.google.android.gms:play-services-location:15.0.0'
+
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+
+    implementation 'com.tomtom.online:sdk-search:2.4807'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+
 }
