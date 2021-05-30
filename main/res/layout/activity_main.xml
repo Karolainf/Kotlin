@@ -7,38 +7,45 @@
     tools:context=".MainActivity">
 
 
-    <fragment xmlns:tomtom="http://schemas.android.com/apk/res-auto"
+    <fragment
         android:id="@+id/map_fragment"
         android:name="com.tomtom.online.sdk.map.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:cameraFocusAreaBearing="84.5"
 
 
-        tomtom:mapStyleSource="STYLE_MERGER"
-        tomtom:styleUrl="http://your-server:port/style/example-merged.json"
+        app:cameraFocusAreaBottomRightLatitude="12.5"
 
-        tomtom:cameraFocusAreaBearing="84.5"
-        tomtom:cameraFocusAreaBottomRightLatitude="12.5"
-        tomtom:cameraFocusAreaBottomRightLongitude="84.5"
-        tomtom:cameraFocusAreaPitch="84.5"
-        tomtom:cameraFocusAreaTopLeftLatitude="84.5"
-        tomtom:cameraFocusAreaTopLeftLongitude="13.5"
 
-        tomtom:cameraPositionBearing="84.5"
-        tomtom:cameraPositionLatitude="84.5"
-        tomtom:cameraPositionLongitude="84.5"
-        tomtom:cameraPositionPitch="84.5"
-        tomtom:cameraPositionZoom="11"
+        app:cameraFocusAreaBottomRightLongitude="84.5"
+        app:cameraFocusAreaPitch="84.5"
+        app:cameraFocusAreaTopLeftLatitude="84.5"
+        app:cameraFocusAreaTopLeftLongitude="13.5"
+        app:cameraPositionBearing="84.5"
+        app:cameraPositionLatitude="84.5"
 
-        tomtom:mapBackgroundColor="@color/solid_black"
+        app:cameraPositionLongitude="84.5"
+        app:cameraPositionPitch="84.5"
+        app:cameraPositionZoom="11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
 
-        tomtom:mapPaddingBottom="200"
-        tomtom:mapPaddingLeft="12"
-        tomtom:mapPaddingRight="50"
-        tomtom:mapPaddingTop="100"
 
-        tomtom:mapsApiKey="maps.api.key"
-        tomtom:trafficApiKey="traffic.api.key"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:mapPaddingBottom="200"
+        app:mapPaddingLeft="12"
+        app:mapPaddingRight="50"
 
+        app:mapPaddingTop="100"
+        app:mapStyleSource="STYLE_MERGER"
+        app:mapsApiKey="DuujoKxauvhngFp2gzuoECD1ra58U8jK"
+        app:trafficApiKey="VZI2FY36D6r3MAzjkXVl8lzPbYgEJbJA"
+        tools:layout="@layout/map_view"
+        tools:layout_editor_absoluteY="-57dp" />
+
+    <!--
+    tomtom:styleUrl="http://your-server:port/style/example-merged.json"
+    tomtom:mapBackgroundColor="#FFFFFF" !-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

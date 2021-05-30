@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MyApp</string>
+    <string name="app_name">MapKotlin</string>
+    <string name="podpowiedz">Wpisz cos</string>
 </resources>
